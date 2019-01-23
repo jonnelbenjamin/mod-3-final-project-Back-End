@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2019_01_22_171451) do
     t.string "source_id"
     t.string "source_name"
     t.string "url"
-    t.string "url_to_image"
+    t.string "urlToImage"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
