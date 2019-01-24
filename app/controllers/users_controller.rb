@@ -5,11 +5,12 @@ class UsersController < ApplicationController
 
   def update
     current_user = User.find(params[:id])
-    byebug
     #we want to search for the corresponding url within topics from strong_params
   end
 
-
+  def getFavorites
+    render json: User.find(params[:id]).topics
+  end
 
   private
 
