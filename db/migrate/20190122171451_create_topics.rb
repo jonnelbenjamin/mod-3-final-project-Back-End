@@ -8,7 +8,7 @@ class CreateTopics < ActiveRecord::Migration[5.2]
       t.string :source_id
       t.string :source_name
       t.string :url
-      t.string :urlToImage
+      t.string :url_to_image
       t.integer :user_id
 
       t.timestamps

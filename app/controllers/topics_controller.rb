@@ -8,7 +8,7 @@ class TopicsController < ApplicationController
   end
 
   def destroy
-    Topic.find(strong_params[:topic]).destroy
+    Topic.find(strong_params).delete
   end
 
   private
