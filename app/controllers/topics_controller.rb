@@ -4,8 +4,11 @@ class TopicsController < ApplicationController
   end
 
   def create
-    byebug
     Topic.create(strong_params)
+  end
+
+  def destroy
+    Topic.find(strong_params[:topic]).destroy
   end
 
   private

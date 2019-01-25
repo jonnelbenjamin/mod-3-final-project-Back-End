@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   private
 
   def strong_params
-    params.require(:user).permit(:url, :author, :title, :description, :urlToImage)
+    params.require(:user).permit(:url, :author, :title, :description, :url_to_image)
   end
 
 end

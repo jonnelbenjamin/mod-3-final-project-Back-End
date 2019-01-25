@@ -4,5 +4,6 @@ Rails.application.routes.draw do
 
   get '/users/:id/favorites', to: 'users#getFavorites'
   post '/topics/', to: 'topics#create'
+  delete 'users/:id/favorites', to: 'topics#destroy'
 
 end
