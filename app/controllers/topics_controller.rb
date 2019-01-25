@@ -4,6 +4,7 @@ class TopicsController < ApplicationController
   end
 
   def create
+    byebug
     Topic.create(strong_params)
   end
 
