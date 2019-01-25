@@ -8,7 +8,8 @@ class TopicsController < ApplicationController
   end
 
   def destroy
-    Topic.find(strong_params).delete
+    #we want to find a topic by it's topic_id so that we may destroy it's instance
+    Topic.find(params[:topic_id]).delete
   end
 
   private
